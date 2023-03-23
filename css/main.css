@@ -1,0 +1,136 @@
+@media (min-width: 992px) {
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    border: none;
+    transition: transform 0.1s;
+  }
+  .card:hover {
+    transform: scale(1.02);
+  }
+  .card__paragraph-text p {
+    font-size: 1.5rem;
+  }
+  .card__content {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+  .card__purple {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .card__gray-blue {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .card__white {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .card__night-blue {
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+  .card__second-white {
+    grid-column: 4/5;
+    grid-row: 1/3;
+  }
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.3em;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(0, 0%, 81%);
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.cards {
+  padding: 6em 3em;
+}
+
+.card {
+  padding: 2em;
+  border-radius: 1em;
+}
+.card__content {
+  display: grid;
+  gap: 2em;
+}
+.card__author {
+  display: flex;
+  align-items: center;
+}
+.card__author-data {
+  margin-left: 1em;
+}
+.card__author-data--name {
+  color: hsl(0, 0%, 100%);
+}
+.card__author-data--grade {
+  color: hsl(0, 0%, 100%);
+  opacity: 50%;
+}
+.card__author-logo {
+  width: 3em;
+  border-radius: 50%;
+}
+.card__heading-text {
+  margin: 1.3rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+.card__paragraph-text {
+  font-size: 1.3rem;
+  color: hsl(0, 0%, 100%);
+  opacity: 70%;
+}
+
+.card {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.card__purple {
+  background-color: hsl(263, 55%, 52%);
+}
+.card__purple img {
+  border: solid 2px rgba(216, 149, 255, 0.548);
+}
+.card__gray-blue {
+  background-color: hsl(217, 19%, 35%);
+}
+.card__white {
+  background-color: hsl(0, 0%, 100%);
+}
+.card__white p {
+  color: hsl(217, 19%, 35%);
+}
+.card__night-blue {
+  background-color: hsl(219, 29%, 14%);
+}
+.card__night-blue img {
+  border: solid 2px rgba(216, 149, 255, 0.548);
+}
+.card__second-white {
+  background-color: hsl(0, 0%, 100%);
+}
+.card__second-white p {
+  color: hsl(217, 19%, 35%);
+}/*# sourceMappingURL=main.css.map */

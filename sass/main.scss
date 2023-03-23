@@ -1,0 +1,121 @@
+@use './colors' as *;
+@use './desktop' as *;
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.3em;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	background-color: $lightgray;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+}
+
+.cards {
+	padding: 6em 3em;
+}
+
+// - - - - - - /
+// GENERAL     /
+// - - - - - - /
+
+.card {
+	padding: 2em;
+	border-radius: 1em;
+
+	&__content {
+		display: grid;
+		gap: 2em;
+	}
+
+	&__author {
+		display: flex;
+		align-items: center;
+
+		&-data {
+			margin-left: 1em;
+
+			&--name {
+				color: $white;
+			}
+
+			&--grade {
+				color: $white;
+				opacity: 50%;
+			}
+		}
+	}
+
+	&__author-logo {
+		width: 3em;
+		border-radius: 50%;
+	}
+
+	&__heading-text {
+		margin: 1.3rem 0;
+		font-size: 2rem;
+		font-weight: 600;
+		color: $white;
+	}
+
+	&__paragraph-text {
+		font-size: 1.3rem;
+		color: $white;
+		opacity: 70%;
+	}
+}
+
+// - - - - - - - - - /
+// SELECTED CARDS    /
+// - - - - - - - - - /
+
+.card {
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+	&__purple {
+		background-color: $violet;
+
+		img {
+			border: solid 2px rgba(216, 149, 255, 0.548);
+		}
+	}
+
+	&__gray-blue {
+		background-color: $grayishblue;
+	}
+
+	&__white {
+		background-color: $white;
+
+		p {
+			color: $grayishblue;
+		}
+	}
+
+	&__night-blue {
+		background-color: $blackishblue;
+
+		img {
+			border: solid 2px rgba(216, 149, 255, 0.548);
+		}
+	}
+
+	&__second-white {
+		background-color: $white;
+
+		p {
+			color: $grayishblue;
+		}
+	}
+}
