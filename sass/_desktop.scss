@@ -14,6 +14,11 @@
 			transform: scale(1.02);
 		}
 
+		&__bg {
+			top: 0;
+			right: 23%;
+		}
+
 		&__paragraph-text {
 			p {
 				font-size: 1.5rem;
